@@ -1,5 +1,6 @@
 import { createPublicClient, http, formatUnits, parseAbi } from 'viem'
 import { mainnet } from 'viem/chains'
+import { Abi } from 'abitype'
 
 const RPC_URL = 'https://rpc.ankr.com/eth'
 
@@ -17,7 +18,7 @@ const getBalance = async () => {
 }
 
 const connectContract = async () => {
-  const ERC20ABI = parseAbi([
+  const ERC20ABI: Abi = parseAbi([
     'function symbol() public view returns (string)',
     'function decimals() public view returns (uint8)',
     'function totalSupply() public view returns (uint256)',
