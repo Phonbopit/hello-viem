@@ -1,0 +1,14 @@
+{
+  "name": "hello-viem",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "ts-node app.ts"
+  },
+  "dependencies": {
+    "abitype": "0.7.1",
+    "viem": "0.2.14"
+  },
+  "devDependencies": {
+    "ts-node": "10.9.1"
+  }
+}
